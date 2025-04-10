@@ -3,7 +3,7 @@ builds:
   - env:
       - CGO_ENABLED=0
     ldflags:
-      - -s -w -X github.com/karimra/gnsic/app.version={{.Version}} -X github.com/karimra/gnsic/app.commit={{.ShortCommit}} -X github.com/karimra/gnsic/app.date={{.Date}} -X github.com/karimra/gnsic/app.gitURL={{.GitURL}}
+      - -s -w -X github.com/karimra/gnsic/app.version={{.Version}} -X github.com/karimra/gnsic/app.commit={{.ShortCommit}} -X github.com/karimra/gnsic/app.date={{.Date}} -X github.com/karimra/gnsic/app.gitURL="https://github.com/karimra/gnsic"
     goos:
       - linux
       - darwin
